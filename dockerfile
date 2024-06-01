@@ -12,4 +12,5 @@ RUN apt-get update && apt-get install --no-install-recommends -y nginx; \
 EXPOSE 80
 
 # Start nginx
+ENTRYPOINT [“nginx”]
 CMD ["/usr/sbin/nginx"]
